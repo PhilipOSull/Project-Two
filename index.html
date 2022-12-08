@@ -9,7 +9,31 @@
 </head>
 <body>
     
+    <h1>Guess the number</h1>
+
+    <div id="game-area"></div>
+
+    <h2>I am thinking of a number between 1-100.</h2>
+    <h2>Can you guess it?</h2>
+
+    <select id="difficulty">
+        <option value="diffHard">Hard</option>
+        <option value="diffMedium">Medium</option>
+        <option value="diffEasy">Easy</option>
+      </select><br>
+
+      <button data-type="buttons" id="btn--Start">Start</button>
+
+      <input type="text" placeholder="Num" id="guessArea"><br>
+      <button data-type="buttons" id="btn--Guess">Guess!</button>
+
+      <p>Time left: <span id="timeLeft">30</span></p>
+
+      <p>No. of Guesses: <span id="numGuesses">0</span></p>
+      <p id="numGuessed">Numbers Guessed: 4, 56, 24</p>
+      <p id="highLow">Your Guess is too high!</p>
     
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
