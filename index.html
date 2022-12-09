@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,61 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+
+    <!--HEADING-->
+
     <h1>Guess the number</h1>
 
-    <div id="game-area"></div>
+    <!--GAME AREA-->
 
-    <h2>I am thinking of a number between 1-100.</h2>
-    <h2>Can you guess it?</h2>
+    <div id="game-area">
 
-    <select id="difficulty">
-        <option value="diffHard">Hard</option>
-        <option value="diffMedium">Medium</option>
-        <option value="diffEasy">Easy</option>
-      </select><br>
+        <div id="gameHeading">
+            <h3>I am thinking of a number between 1-100.</h3>
+            <h3>Can you guess it?</h3>
+        </div>
 
-      <button data-type="buttons" id="btn--Start">Start</button>
+        <!--DIV CONTAINER-->
 
-      <input type="text" placeholder="Num" id="guessArea"><br>
-      <button data-type="buttons" id="btn--Guess">Guess!</button>
+        <div id="container">
 
-      <p>Time left: <span id="timeLeft">30</span></p>
+            <div id="leftArea" class="grid">
 
-      <p>No. of Guesses: <span id="numGuesses">0</span></p>
-      <p id="numGuessed">Numbers Guessed: 4, 56, 24</p>
-      <p id="highLow">Your Guess is too high!</p>
-    
+                <button data-type="buttons" id="btn--Start">Start</button>
+                <select id="difficulty">
+                    <option value="diffEasy">Easy</option>
+                    <option value="diffMedium">Medium</option>
+                    <option value="diffHard">Hard</option>
+
+
+                </select>
+
+            </div>
+
+            <div id="centerArea" class="grid">
+                <input type="text" placeholder="Num" id="guessArea"><br>
+                <button data-type="buttons" id="btn--Guess">Guess!</button>
+            </div>
+
+            <div id="rightArea" class="grid">
+                <p>Time left: <span id="timeLeft">30</span></p>
+            </div>
+
+        </div>
+
+        <!--BOTTOM AREA-->
+
+        <div id="bottomArea">
+            <p>No. of Guesses: <span id="numGuesses">0</span></p>
+            <p id="numGuessed">Numbers Guessed: 4, 56, 24</p>
+            <p id="highLow">Your Guess is too high!</p>
+            <button data-type="buttons" id="btn--Guess">Reset</button>
+        </div>
+    </div>
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

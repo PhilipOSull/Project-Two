@@ -1,0 +1,79 @@
+body {
+    background-color: white;
+    color: #f37724;
+    text-align: center;
+}
+
+#gameHeading {
+    width: 85%;
+    margin: 30px auto;
+}
+
+#game-area {
+    background-color: #E6ECF0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 30rem;
+    max-height: 30rem;
+    max-width: 52rem;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+
+/* #leftArea {
+    width: 35%;
+    margin: 10px;
+} */
+
+#container {
+    display: flex;
+
+
+}
+
+.grid {
+    flex: 1;
+
+}
+
+#btn--Start {
+    margin: 2rem;
+}
+
+#guessArea {
+    width: 7rem;
+    height: 7rem;
+}
+
+#btn--Guess {
+    margin: 1rem;
+}
+
+#rightArea p {
+     margin: 3rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .grid-numbers {
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(1,1fr);
+        margin: 2rem 0;
+    }
+
+    .grid-numbers div:nth-of-type(3) {
+        order: -1;
+    }
+
+}
+
+
+/* @media screen and (max-width: 480px) {
+    #container {
+        flex-direction: column-reverse;
+    }
+
+} */
