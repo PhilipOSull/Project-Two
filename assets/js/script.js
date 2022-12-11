@@ -1,27 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let btn = document.getElementById("btn--Guess");
+    const btn = document.getElementById("btn--Guess");
+    btn.addEventListener("click", runGame);
 
 
-    btn.addEventListener("click", runGame, startGame);
-})
+const btnRestart = document.getElementById("btn--Restart");
+btnRestart.addEventListener("click", restart);
+const btnStart = document.getElementById('btn--Start');
+btnStart.addEventListener("click", startGame);
 
-// let btnRestart = document.getElementById("btn--Restart");
-// btnRestart.addEventListener("click", restart)
-
+const timeLeft = document.getElementById("timeLeft");
+const select = document.getElementById("difficulty");
 let computerAnswer = Math.floor(Math.random() * 100) + 1;
 
-let timeLeft = document.getElementById("timeLeft");
-let timerId = null;
+let gameTimerId;
+let timer = 60;
 
+function runGame(e) {
 
-// let gameTimerId = setInterval(gameTimer, 1000);
-
-function runGame(event) {
-
-    event.preventDefault();
-    let highLowMsg = document.getElementById("highLow");
-    let numGuessed = document.getElementById("numGuessed");
-    let numGuesses = document.getElementById("numGuesses");
+    e.preventDefault();
+    const highLowMsg = document.getElementById("highLow");
+    const numGuessed = document.getElementById("numGuessed");
+    const numGuesses = document.getElementById("numGuesses");
 
     let userGuess = document.getElementById("guessArea").value;
     if (userGuess < 1 || userGuess > 100) {
@@ -58,30 +57,25 @@ function runGame(event) {
             numGuessed.textContent = sentence.slice(0, 21) + sentence.slice(21) + ',' + userGuess;
         }
     }
+    if (btnStart.style.visibility = "visible") {
+        startGame();
+    }
 }
-
-let btnRestart = document.getElementById("btn--Restart");
-btnRestart.addEventListener("click", restart);
-
-// document.getElementById("btn--Start").addEventListener("click", function () {
-//     let btnStart = document.getElementById('btn--Start');
-
-let btnStart = document.getElementById('btn--Start');
-btnStart.addEventListener("click", startGame);
-
-
-let gameTimerId;
-let timer = 60;
 
 function startGame() {
     clearInterval(gameTimerId);
     timer = 60;
-    gameTimerId = setInterval(gameTimer, 1000);
+    const selectValue = select.options[select.selectedIndex].value;
+    const faster = {
+        'easy': 1000,
+        'medium': 800,
+        'hard': 500
+    };
+    gameTimerId = setInterval(gameTimer, faster[selectValue]);
     btnStart.style.visibility = 'hidden';
 }
 
 function gameTimer() {
-
     if (btnStart.style.visibility == 'visible') {
         return;
     }
@@ -92,7 +86,8 @@ function gameTimer() {
     if (timer == 0) {
         clearInterval(gameTimerId)
         // btn.disable = true;
-        alert("Game over!");
+        const highLowMsg = document.getElementById("highLow");
+        highLowMsg.textContent = "GAME OVER!";
     }
 
     ;
@@ -117,11 +112,12 @@ function restart(e) {
     document.getElementById("numGuessed").innerText = '';
     document.getElementById("guessArea").value = '';
     document.getElementById("highLow").innerText = '';
-    document.getElementById("timeLeft").innerText = 60;
     computerAnswer = Math.floor(Math.random() * 100) + 1;
+    document.getElementById("timeLeft").innerText = 60;
     // alert("hi"); // test
     // return;
     btnStart.style.visibility = 'visible';
 
 
 }
+})
