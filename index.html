@@ -32,9 +32,9 @@
 
                 <button data-type="buttons" id="btn--Start">Start</button>
                 <select id="difficulty">
-                    <option value="diffEasy" class="easy">Easy</option>
-                    <option value="diffMedium" class="medium">Medium</option>
-                    <option value="diffHard" class="hard">Hard</option>
+                    <option value="1">Easy</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Hard</option>
 
 
                 </select>
@@ -47,7 +47,7 @@
             </div>
 
             <div id="rightArea" class="grid">
-                <p>Time left: <span id="timeLeft">30</span></p>
+                <p>Time left: <span id="timeLeft">60</span></p>
             </div>
 
         </div>
@@ -55,10 +55,10 @@
         <!--BOTTOM AREA-->
 
         <div id="bottomArea">
+            <p id="highLow"></p>
             <p>No. of Guesses: <span id="numGuesses">0</span></p>
             <p id="numGuessed"></p>
-            <p id="highLow"></p>
-            <button data-type="buttons" id="btn--Reset">Reset</button>
+            <button id="btn--Restart">Restart</button>
         </div>
     </div>
 
