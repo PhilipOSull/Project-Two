@@ -97,6 +97,9 @@ main {
     border-radius: 5px;
     padding: 3px;
     cursor: pointer;
+    font-size: 26px;
+    color: #f37724;
+    border: none;
 }
 
 #btn--Start {

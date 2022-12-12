@@ -80,11 +80,18 @@ function gameTimer() {
         return;
     }
 
+    if (timer == 30) {
+        const hourGlass = document.getElementById("hourGlass");
+        hourGlass.innerHTML = `<i class="fas fa-hourglass-half"></i>`
+    }
+
     timer--
     timeLeft.textContent = timer
 
     if (timer == 0) {
         clearInterval(gameTimerId)
+        const hourGlass = document.getElementById("hourGlass");
+        hourGlass.innerHTML = `<i class="fas fa-hourglass-end"></i>`
         // btn.disable = true;
         const highLowMsg = document.getElementById("highLow");
         highLowMsg.textContent = "GAME OVER!";
@@ -106,6 +113,8 @@ function gameTimer() {
 function restart(e) {
     e.preventDefault()
     clearInterval(gameTimerId);
+    const hourGlass = document.getElementById("hourGlass");
+        hourGlass.innerHTML = `<i class="fas fa-hourglass-start"></i>`
     // numGuessed.innerText = '';
     // numGuesses.innerText = '';
     document.getElementById("numGuesses").innerText = 0;
