@@ -1,26 +1,24 @@
-document.addEventListener("DOMContentLoaded", function () {
+    // document.addEventListener("keydown", function (event) {
+    //     if (event.key === 'Enter') {
+    //         alert("test");
+    //     }
+    // });
+
     const btn = document.getElementById("btn--Guess");
-    btn.addEventListener("click", runGame);
-
-    document.addEventListener("keydown", function (event) {
-        if (event.key === 'Enter') {
-            alert("test");
-        }
-    });
-
     const btnRestart = document.getElementById("btn--Restart");
-    btnRestart.addEventListener("click", restart);
     const btnStart = document.getElementById('btn--Start');
-    btnStart.addEventListener("click", startGame);
-
     const timeLeft = document.getElementById("timeLeft");
     const select = document.getElementById("difficulty");
-    let computerAnswer = Math.floor(Math.random() * 100) + 1;
 
+    let computerAnswer = Math.floor(Math.random() * 100) + 1;
     let gameTimerId;
     let timer = 60;
 
-    function runGame(e) {
+    btn.addEventListener("click", evaluateGuess);
+    btnRestart.addEventListener("click", restart);
+    btnStart.addEventListener("click", startGame);
+
+    function evaluateGuess(e) {
 
         e.preventDefault();
         const highLowMsg = document.getElementById("highLow");
@@ -106,15 +104,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-
-    // async function start(game) {
-    //     let btnStart = document.getElementById("btn--Start");
-    //     if(btnStart.addEventListener("click")) {
-    //     gameTimer();
-    //     }
-    // }
-
-
     function restart(e) {
         e.preventDefault()
         clearInterval(gameTimerId);
@@ -134,4 +123,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     }
-})
