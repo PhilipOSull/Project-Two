@@ -33,7 +33,7 @@ main {
     flex: 1 0 100%;
 }
 
-#gameHeading {
+#game-heading {
     width: 85%;
     margin: 60px auto;
     color: azure;
@@ -91,7 +91,7 @@ h1 {
 }
 
 
-#guessArea {
+#guess-area {
         /* width: 5rem; */
         position: relative;
         border: 1px solid rgba(0, 0, 0, 0.2);
@@ -171,19 +171,19 @@ h1 {
     color: darksalmon; */
 }
 
-#leftArea {
+#left-area {
     display: flex;
     gap: 2.5rem;
     justify-content: space-between;
     align-items: center;
 }
 
-#highLow {
+#high-low {
     margin-bottom: 33px;
     font-size: 1.7rem;
 }
 
-#numGuesses {
+#num-guesses {
     margin-bottom: 25px;
 }
 

@@ -7,8 +7,10 @@
     const btn = document.getElementById("btn--Guess");
     const btnRestart = document.getElementById("btn--Restart");
     const btnStart = document.getElementById('btn--Start');
-    const timeLeft = document.getElementById("timeLeft");
+    const timeLeft = document.getElementById("time-left");
     const select = document.getElementById("difficulty");
+    const hourGlass = document.getElementById("hour-glass");
+    const highLowMsg = document.getElementById("high-low");
 
     let computerAnswer = Math.floor(Math.random() * 100) + 1;
     let gameTimerId;
@@ -21,9 +23,8 @@
     function evaluateGuess(e) {
 
         e.preventDefault();
-        const highLowMsg = document.getElementById("highLow");
-        const numGuessed = document.getElementById("numGuessed");
-        const numGuesses = document.getElementById("numGuesses");
+        const numGuessed = document.getElementById("num-guessed");
+        const numGuesses = document.getElementById("num-guesses");
 
         let userGuess = document.getElementById("guessArea").value;
         if (userGuess < 1 || userGuess > 100) {
@@ -84,19 +85,15 @@
         }
 
         if (timer == 30) {
-            const hourGlass = document.getElementById("hourGlass");
-            hourGlass.innerHTML = `<i class="fas fa-hourglass-half"></i>`
+            hourGlass.innerHTML = `<i class="fas fa-hourglass-half"></i>`;
         }
 
         timer--
-        timeLeft.textContent = timer
+        timeLeft.textContent = timer;
 
         if (timer == 0) {
             clearInterval(gameTimerId)
-            const hourGlass = document.getElementById("hourGlass");
-            hourGlass.innerHTML = `<i class="fas fa-hourglass-end"></i>`
-            // btn.disable = true;
-            const highLowMsg = document.getElementById("highLow");
+            hourGlass.innerHTML = `<i class="fas fa-hourglass-end"></i>`;
             highLowMsg.textContent = "GAME OVER!";
         }
 
@@ -107,18 +104,13 @@
     function restart(e) {
         e.preventDefault()
         clearInterval(gameTimerId);
-        const hourGlass = document.getElementById("hourGlass");
-        hourGlass.innerHTML = `<i class="fas fa-hourglass-start"></i>`
-        // numGuessed.innerText = '';
-        // numGuesses.innerText = '';
-        document.getElementById("numGuesses").innerText = 0;
-        document.getElementById("numGuessed").innerText = '';
-        document.getElementById("guessArea").value = '';
-        document.getElementById("highLow").innerText = '';
+        hourGlass.innerHTML = `<i class="fas fa-hourglass-start"></i>`;
+        document.getElementById("num-guesses").innerText = 0;
+        document.getElementById("num-guessed").innerText = '';
+        document.getElementById("guess-area").value = '';
+        document.getElementById("high-low").innerText = '';
         computerAnswer = Math.floor(Math.random() * 100) + 1;
-        document.getElementById("timeLeft").innerText = 60;
-        // alert("hi"); // test
-        // return;
+        document.getElementById("time-left").innerText = 60;
         btnStart.style.visibility = 'visible';
 
 
