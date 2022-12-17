@@ -34,8 +34,6 @@ h1 {
 
 #game-area {
 
-    width: 90%;
-    padding: 2%;
     border-radius: 150px;
     background: linear-gradient(315deg, #a87cff, #8d68db);
     box-shadow: -22px -11px 66px #7f5ec5, 29px 33px 66px #bb8aff;
@@ -43,10 +41,11 @@ h1 {
 }
 
 .container {
-    max-width: 68.75rem;
+
+    width: 95%;
+    max-width: 960px;
+    padding: 2%;
     margin: 0 auto;
-    overflow: auto;
-    padding: 0 2.5rem;
 
 }
 
@@ -54,7 +53,7 @@ h1 {
 
 #game-heading {
     width: 85%;
-    margin: 60px auto;
+    margin: 4% auto;
     color: azure;
 }
 
@@ -82,6 +81,7 @@ h1 {
 
 #difficulty {
 
+    padding: 0.35rem;
     border-radius: 5px;
     font-weight: 900;
     cursor: pointer;
@@ -147,7 +147,7 @@ h1 {
 /* TOO HIGH/LOW TEXT */
 
 #high-low {
-    margin-bottom: 33px;
+    margin-bottom: 2%;
     font-size: 1.7rem;
 }
 
@@ -170,7 +170,7 @@ h1 {
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 16px;
     background-color: #9d74f3;
     color: azure;
     border: none;
@@ -187,7 +187,7 @@ h1 {
 }
 
 
-/* --- Grow --- */
+/* --- GROW --- */
 
 
 .hvr-grow {
@@ -207,26 +207,52 @@ h1 {
     transform: scale(1.1);
 }
 
-
+/* --- MEDIA SCREENS --- */
 
 @media only screen and (max-width: 768px) {
 
     .grid {
         grid-template-rows: repeat(1, 1fr);
         grid-template-columns: repeat(1, 1fr);
-        margin: 2rem 0;
+        margin: 1rem 0;
+        gap: 1rem;
     }
 
     .grid div:nth-of-type(3) {
         order: -1;
     }
 
+    #guess-area {
+        margin-top: 10px;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 3.5rem;
+    }
+
+    #right-area p {
+        margin: 0 1rem;
+        color: azure;
+    }
+
+    #btn--Guess {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
 }
 
 
-/* @media screen and (max-width: 480px) {
-    #container {
-        flex-direction: column-reverse;
+@media screen and (max-width: 480px) {
+    #game-heading h3:first-child {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 5px;
     }
 
-} */
+    #game-heading {
+        margin: 15% auto;
+    }
+
+}
