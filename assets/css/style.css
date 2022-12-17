@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Oi&family=Roboto:wght@100;300;400;500;700&display=swap');
 
 * {
@@ -7,37 +6,31 @@
     margin: 0;
 }
 
-
 body {
 
     font-family: cursive;
-    /* color: #f37724; */
     text-align: center;
     display: flex;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
     background-color: #FFE32C;
-    /* font-family: 'Roboto', sans-serif; */
-    /* color: #f37724; */
-    /* text-align: center;
-    display: flex;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    background-color: #e6f0f7;
-    background-image: linear-gradient(43deg, #e6f0f7 16%, #c5e4f5 33%); */
 }
 
 main {
     flex: 1 0 100%;
 }
 
-#game-heading {
-    width: 85%;
-    margin: 60px auto;
-    color: azure;
+/* --- MAIN HEADING --- */
+
+h1 {
+    color: #fdfdfd;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    font-size: 4rem;
 }
+
+/* --- GAME AREA  --- */
 
 #game-area {
 
@@ -47,14 +40,6 @@ main {
     background: linear-gradient(315deg, #a87cff, #8d68db);
     box-shadow: -22px -11px 66px #7f5ec5, 29px 33px 66px #bb8aff;
 
-    /* border-style: solid;
-    border-color: steelblue;
-    width: 85%;
-    padding: 6%;
-    border-radius: 100px;
-    background: linear-gradient(145deg, #f9a183, #d2876e);
-    box-shadow: 4px 9px 9px, 8px 5px 45px #eb987b; */
-            
 }
 
 .container {
@@ -62,15 +47,22 @@ main {
     margin: 0 auto;
     overflow: auto;
     padding: 0 2.5rem;
-    
-    
-             
+
 }
+
+/* GAME AREA HEADING */
+
+#game-heading {
+    width: 85%;
+    margin: 60px auto;
+    color: azure;
+}
+
+/* --- MIDDLE SECTION - GAME AREA --- */
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    /* margin: 3rem 0; */
+    grid-template-columns: repeat(3, 1fr);
     height: 100%;
     margin-top: 1rem;
     margin-bottom: 1.5rem;
@@ -78,32 +70,46 @@ main {
     align-items: start;
     justify-items: center;
 }
-/* #leftArea {
-    width: 35%;
-    margin: 10px;
-} */
 
-h1 {
-    color: #fdfdfd;
-    font-weight: 900;
-    margin-bottom: 2rem;
-    font-size: 4rem;
+/* DIFFICULTY / START BUTTON */
+
+#left-area {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
+#difficulty {
+
+    border-radius: 5px;
+    font-weight: 900;
+    cursor: pointer;
+    background-color: #9d74f3;
+    color: #FFE32C;
+}
+
+#btn--Start {
+    border-radius: 2rem;
+    padding: 6px;
+    color: #FFE32C;
+    cursor: pointer;
+}
+
+/* GUESS AREA / GUESS BUTTON */
 
 #guess-area {
-        /* width: 5rem; */
-        position: relative;
-        border: 1px solid rgba(0, 0, 0, 0.2);
-        color: orange;
-        background: azure;
-        width: 100%;
-        padding: 10px;
-        outline: none;
-        font-size: 16px;
-        font-weight: 300;
-        resize: none;
-        border-radius: 10px;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: orange;
+    background: azure;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+    border-radius: 10px;
 }
 
 #btn--Guess {
@@ -118,17 +124,43 @@ h1 {
     color: #9d74f3;
     padding: 4px;
     cursor: pointer;
+}
 
-    /* border: none;
+/* HOURGLASS / TIME LEFT */
+
+#right-area p {
     margin: 1rem;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    border-radius: 5px;
-    background-color: darksalmon;
     color: azure;
-    padding: 4px;
-    cursor: pointer; */
+}
+
+#right-area.icon-yellow {
+    color: #FFE32C;
+    ;
+}
+
+/* --- BOTTOM SECTION - GAME AREA --- */
+
+#bottom-area {
+    color: azure;
+}
+
+/* TOO HIGH/LOW TEXT */
+
+#high-low {
+    margin-bottom: 33px;
+    font-size: 1.7rem;
+}
+
+/* NUMBER OF GUESSES TEXT */
+
+#num-guesses {
+    margin-bottom: 25px;
+}
+
+/* RESTART ICON / RESTART BUTTON */
+
+#btn--Restart i {
+    color: #FFE32C;
 }
 
 #btn--Restart {
@@ -140,66 +172,11 @@ h1 {
     font-weight: 500;
     font-size: 13px;
     background-color: #9d74f3;
-    /* background-color: darksalmon; */
     color: azure;
     border: none;
 }
 
-#btn--Restart i {
-    color: #FFE32C;
-}
-
-#btn--Start {
-    border-radius: 2rem;
-    padding: 6px;
-    color: #FFE32C;
-    cursor: pointer;
-}
-
-#difficulty {
-
-    border-radius: 5px;
-    font-weight: 900;
-    cursor: pointer;
-    background-color: #9d74f3;
-    color: #FFE32C;
-
-    /* border-radius: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    background-color: #C4E3F5;
-    color: darksalmon; */
-}
-
-#left-area {
-    display: flex;
-    gap: 2.5rem;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#high-low {
-    margin-bottom: 33px;
-    font-size: 1.7rem;
-}
-
-#num-guesses {
-    margin-bottom: 25px;
-}
-
-
-#rightArea p {
-    margin: 1rem;
-    color: azure;
-}
-
-#bottomArea {
-    color: azure;
-}
-
-/* .fa, .fas {
-    color: #C4E3F5;
-} */
+/* ICONS */
 
 #icon-purple {
     color: #9d74f3;
@@ -209,11 +186,10 @@ h1 {
     color: #FFE32C;
 }
 
-#rightArea.icon-yellow {
-    color: #FFE32C;;
-}
 
-/* Grow */
+/* --- Grow --- */
+
+
 .hvr-grow {
     display: inline-block;
     vertical-align: middle;
@@ -236,8 +212,8 @@ h1 {
 @media only screen and (max-width: 768px) {
 
     .grid {
-        grid-template-rows: repeat(1,1fr);
-        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         margin: 2rem 0;
     }
 
