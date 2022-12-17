@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
     <title>Guess the Number!</title>
 </head>
 
@@ -17,7 +17,7 @@
 
         <!--HEADING-->
 
-        <h1>Guess the number <i class="fas fa-sort-numeric-down" id="icon-purple"></i></h1>
+        <h1>Guess the number <i class="fas fa-sort-numeric-down"></i></h1>
 
         <!--GAME AREA-->
 
@@ -32,27 +32,29 @@
 
                 <div id="left-area">
 
-                    
+
                     <select id="difficulty">
                         <option value="easy" selected>Easy</option>
                         <option value="medium">Medium</option>
                         <option value="hard">Hard</option>
                     </select>
                     <!-- <button id="btn--Start">Start</button> -->
-                    <div id="btn--Start" class="hvr-grow">
-                    <div><i class="fas fa-play-circle fa-3x" id="icon-yellow"></i><h4>Play!</h4>
+                    <div id="btn-start" class="hvr-grow">
+                        <div><i class="fas fa-play-circle fa-3x"></i>
+                            <h4>Play!</h4>
+                        </div>
                     </div>
-                </div>
 
                 </div>
 
                 <div id="center-area">
                     <input type="text" placeholder="Num" id="guess-area"><br>
-                    <button id="btn--Guess" class="hvr-grow">GUESS<i class="fas fa-exclamation" id="icon-purple"></i></button>
+                    <button id="btn-guess" class="hvr-grow">GUESS<i class="fas fa-exclamation"></i></button>
                 </div>
 
                 <div id="right-area">
-                    <p><span id="hour-glass" class="icon-yellow"><i class="fas fa-hourglass-start"></i></span> Time left: <span id="time-left">60</span></p>
+                    <p><span id="hour-glass"><i class="fas fa-hourglass-start"></i></span> Time
+                        left: <span id="time-left">60</span></p>
                 </div>
 
             </div>
@@ -60,12 +62,14 @@
             <!--BOTTOM AREA-->
 
             <div id="bottom-area">
-                <p id="high-low">Try your Luck!</p>
-                <p>No. of Guesses: <span id="num-guesses">0</span></p>
-                <p id="num-guessed">Numbers Guessed: </p>
+                <p id="high-low">Press the Play button to start!</p>
+                <p>Number of guesses used: <span id="num-guesses">0</span></p>
+                <p id="num-guessed">Your guessed numbers are:  </p>
                 <div>
-                <button class="hvr-grow" id="btn--Restart"><i class="far fa-reply"></i> NEW GAME</button>
-            
+                    <button class="hvr-grow" id="btn-new-game"><i class="far fa-reply"></i> NEW GAME</button>
+
+                </div>
+            </div>
         </div>
     </main>
     <!-- <footer>
