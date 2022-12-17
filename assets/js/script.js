@@ -29,7 +29,7 @@
 
      function evaluateGuessEnter(e) {
          if (e.key == 'Enter') {
-             evaluateGuess(e)
+             evaluateGuess(e);
          }
      }
 
@@ -46,7 +46,7 @@
          }
 
          const userGuessVal = userGuess.value;
-         console.log(userGuessVal)
+         console.log(userGuessVal);
          userGuess.value = '';
          if (userGuessVal < 1 || userGuessVal > 100) {
              alert("Please enter a number between 1 and 100.");
@@ -57,7 +57,7 @@
              if (parseInt(numGuesses.innerText) == 1) {
                  numGuessed.textContent = "Guessed Your guessed numbers are: " + userGuessVal;
              } else {
-                 let sentence = numGuessed.innerText
+                 let sentence = numGuessed.innerText;
                  numGuessed.textContent = sentence.slice(0, 21) + sentence.slice(21) + ',' + userGuessVal;
              }
          } else if (userGuessVal > computerAnswer) {
@@ -89,7 +89,7 @@
              }
          }
          if (btnStart.style.visibility == "visible") {
-             console.log("startGame", btnStart.style.visibility)
+             console.log("startGame", btnStart.style.visibility);
              startGame();
          }
      }
@@ -97,6 +97,11 @@
      function startGame() {
          clearInterval(gameTimerId);
          timer = 60;
+         numGuesses.innerText = 0;
+         numGuessed.innerText = "Your guessed numbers are: ";
+         userGuess.value = '';
+         computerAnswer = Math.floor(Math.random() * 100) + 1;
+         console.log(computerAnswer);
          const selectValue = select.options[select.selectedIndex].value;
          const faster = {
              'easy': 1000,
@@ -105,7 +110,7 @@
          };
          gameTimerId = setInterval(gameTimer, faster[selectValue]);
          btnStart.style.visibility = 'hidden';
-         highLowMsg.innerText ="Start guessing!"
+         highLowMsg.innerText ="Start guessing!";
 
          btn.removeEventListener("click", evaluateGuess);
          btn.addEventListener("click", evaluateGuess);
@@ -120,26 +125,26 @@
              hourGlass.innerHTML = `<i class="fas fa-hourglass-half"></i>`;
          }
 
-         timer--
+         timer--;
          timeLeft.textContent = timer;
 
          if (timer == 0) {
-             clearInterval(gameTimerId)
+             clearInterval(gameTimerId);
              hourGlass.innerHTML = `<i class="fas fa-hourglass-end"></i>`;
              highLowMsg.textContent = "GAME OVER!";
              btnStart.style.visibility = "visible";
-         };
+         }
 
      }
 
      function restart(e) {
-         e.preventDefault()
+         e.preventDefault();
          clearInterval(gameTimerId);
          hourGlass.innerHTML = `<i class="fas fa-hourglass-start"></i>`;
          numGuesses.innerText = 0;
-         numGuessed.innerText = "Your guessed numbers are: "
+         numGuessed.innerText = "Your guessed numbers are: ";
          userGuess.value = '';
-         highLowMsg.innerText = "Press the play button to start!"
+         highLowMsg.innerText = "Press the play button to start!";
          computerAnswer = Math.floor(Math.random() * 100) + 1;
          // console.log(computerAnswer);
          document.getElementById("time-left").innerText = 60;
