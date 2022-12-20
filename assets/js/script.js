@@ -131,7 +131,7 @@
          if (timer == 0) {
              clearInterval(gameTimerId);
              hourGlass.innerHTML = `<i class="fas fa-hourglass-end"></i>`;
-             highLowMsg.textContent = "GAME OVER!";
+             highLowMsg.textContent = "TIME'S UP! THE CORRECT ANSWER WAS: " + computerAnswer;
              btnStart.style.visibility = "visible";
          }
 

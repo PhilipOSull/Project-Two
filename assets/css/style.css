@@ -42,7 +42,7 @@ h1 {
 
 .container {
 
-    width: 95%;
+    width: 90%;
     max-width: 960px;
     padding: 2%;
     margin: 0 auto;
@@ -124,6 +124,10 @@ h1 {
     color: #9d74f3;
     padding: 4px 16px;
     cursor: pointer;
+}
+
+#center-area p {
+    color: azure;
 }
 
 /* TIME LEFT */
@@ -211,7 +215,7 @@ h1 i, #btn-guess i {
 
     h1 {
         margin-bottom: 1rem;
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     #right-area p {
@@ -228,6 +232,27 @@ h1 i, #btn-guess i {
 
 
 @media screen and (max-width: 480px) {
+
+    .grid {
+        gap: 0rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h1 i {
+        font-size: 2rem;
+    }
+
+    #high-low {
+        font-size: 1.3rem;
+    }
+
+    #btn-new-game {
+        margin-bottom: 0.5rem;
+    }
+
     #game-heading h3:first-child {
         font-size: 16px;
         text-align: center;
