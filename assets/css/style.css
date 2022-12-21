@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oi&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Fredoka+One&family=Kavoon&family=Oi&family=Roboto:wght@100;300;400;500;700&family=Shrikhand&family=Ultra&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 
 body {
 
-    font-family: cursive;
+    font-family: 'Corben', cursive;
     text-align: center;
     display: flex;
     min-height: 100vh;
@@ -23,20 +23,40 @@ main {
 
 /* --- MAIN HEADING --- */
 
+#heading-container {
+    display: flex;
+    justify-content: center;
+}
+
+#main-heading {
+    border-radius: 10px;
+    padding: 10px;
+    /* margin-bottom: 10px; */
+    background: linear-gradient(315deg, #a87cff, #8d68db);
+    box-shadow: 0px 10px 26px #7f5ec5, 0px 20px 36px #bb8aff;
+    height: 7rem;
+    display: inline-flex;
+    align-items: center;
+    border: solid;
+    border-color: #bb8aff;
+}
+
 h1 {
     color: #fdfdfd;
     font-weight: 900;
     margin-bottom: 2rem;
-    font-size: 4rem;
+    font-size: 3.2rem;
 }
 
 /* --- GAME AREA  --- */
 
 #game-area {
 
-    border-radius: 150px;
+    border-radius: 20px;
     background: linear-gradient(315deg, #a87cff, #8d68db);
-    box-shadow: -22px -11px 66px #7f5ec5, 29px 33px 66px #bb8aff;
+    box-shadow: -14px 4px 26px #7f5ec5, 0px 20px 36px #bb8aff;
+    border: solid;
+    border-color: #bb8aff;
 
 }
 
@@ -167,11 +187,14 @@ h1 {
 
 /* ICONS */
 
-h1 i, #btn-guess i {
+#btn-guess i {
     color: #9d74f3;
-} 
+}
 
-#right-area i, #btn-start i, #btn-new-game i {
+h1 i,
+#right-area i,
+#btn-start i,
+#btn-new-game i {
     color: #FFE32C;
 }
 
@@ -215,7 +238,7 @@ h1 i, #btn-guess i {
 
     h1 {
         margin-bottom: 1rem;
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
 
     #right-area p {
@@ -238,7 +261,7 @@ h1 i, #btn-guess i {
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     h1 i {

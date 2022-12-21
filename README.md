@@ -64,17 +64,17 @@ My project is a guess the number game. The user guesses between 1 and 100, then 
 ### Validator Testing
 
 - HTML
-  - No error
+  - The W3C Markup Validation Service was used and passed with no errors.
 
 ![HTML Validator](assets/images/guess_number_html_checker.png)
 
 - CSS
-  - No error
+  - The W3C Jigsaw CSS Validation Service was used and passed with no errors.
 
 ![CSS Validator](assets/images/guess_number_css_checker.png)
 
 - JavaScript
-  - No error
+  - No errors were found when passing through the official [Jshint Validator](https://jshint.com/) 
     - The following metrics were returned:
     - There are 5 functions in this file.
     - Function with the largest signature take 1 arguments, while the median is 1.

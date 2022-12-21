@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
     <title>Guess the Number!</title>
 </head>
 
@@ -16,9 +17,9 @@
     <main>
 
         <!--HEADING-->
-
-        <h1>Guess the number <i class="fas fa-sort-numeric-down"></i></h1>
-
+        <div id="heading-container">
+        <div id="main-heading"><h1>Guess the number <i class="fas fa-sort-numeric-down"></i></h1></div>
+        </div>
         <!--GAME AREA-->
 
         <div id="game-area" class="container">
@@ -63,7 +64,7 @@
             <div id="bottom-area">
                 <p id="high-low">Press the Play button to start!</p>
                 <p>Number of guesses used: <span id="num-guesses">0</span></p>
-                <p id="num-guessed">Your guessed numbers are:  </p>
+                <p id="num-guessed">Your guessed numbers are: </p>
                 <div>
                     <button class="hvr-grow" id="btn-new-game"><i class="far fa-reply"></i> NEW GAME</button>
 
@@ -71,15 +72,6 @@
             </div>
         </div>
     </main>
-    <!-- <footer>
-        <div class="container flex">
-            <div>
-                <h2>Guess the Number</h2>
-                <p>Copyright © 2022</p>
-            </div>
-        </div>
-    </footer> -->
-
     <script src="assets/js/script.js"></script>
 </body>
 
