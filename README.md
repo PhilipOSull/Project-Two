@@ -4,10 +4,12 @@ My project is a guess the number game. The user guesses between 1 and 100, then 
 
 ![Responsive Mockup](assets/images/guess_number_screens.png)
 
-[Live website](https://philiposull.github.io/Project-Two/)
+[Live website](https://philiposull.github.io/Project-Two/){:target="_blank" rel="noopener"}
 
 ## Features
 ---
+
+### Existing Features:
 
 ### The heading and logo
 
@@ -57,6 +59,17 @@ My project is a guess the number game. The user guesses between 1 and 100, then 
 
 ![New Game](assets/images/guess_number_new_game.png)
 
+### Features left to implement:
+- I would add Keyframes Animation
+  - e.g Game Area difficulty dropdown menu & play button to slide in from the left and the timer to slide in from the right.
+- I would add a score board between the user and the computer for multiple rounds of play.
+
+## Wireframes
+---
+
+- This was built using [Balsamiq](https://balsamiq.com/wireframes/)
+
+![Wireframes](assets/images/guess_number_wireframes.png)
 
 ## Testing
 ---
@@ -135,13 +148,6 @@ The project website was tested on these devices:
 The project website was tested on numerous screen-sizes:
 
 - From 280px to 5000px
-
-| **Bug** | **Fix** |
-| ----------- | ----------- |
-| Start button |  |  
-| Guess button |  |
-|  |  |
-
 
 ## Deployment
 ---
