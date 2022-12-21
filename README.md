@@ -91,6 +91,7 @@ My project is a guess the number game. The user guesses between 1 and 100, then 
 | Dropdown menu | Start the game | Once the game starts the dropdown menu is disabled until the game restarts | PASS |
 | Guess Area | Put it in a number that isn't between 1 and 100 | Alert saying to choose a number between 1 and 100 | PASS |
 | Guess Button | Make a guess and press the button | It registers your guess | PASS |
+| Guess Button | Make a guess and press the Enter button | It registers your guess | PASS |
 | Hourglass | Let the timer run down | Hourglass changes from full to half to empty depending on the time left | PASS |
 | Press Play text | Make a guess | The text changes to let the user know if their guess was too high or too low | PASS |
 | Press Play text | Let the timer run down | The text changes to time's up and gives the user the answer | PASS |
