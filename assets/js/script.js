@@ -118,6 +118,10 @@ function startGame() {
     userGuess.removeEventListener("keydown", evaluateGuessEnter);
     userGuess.addEventListener("keydown", evaluateGuessEnter);
 
+    if (btnStart.style.visibility = "hidden") {
+        select.disabled = true;
+    }
+
 }
 
 function gameTimer() {
@@ -150,6 +154,9 @@ function restart(e) {
     // console.log(computerAnswer);
     document.getElementById("time-left").innerText = 60;
     btnStart.style.visibility = "visible";
+    if (btnStart.style.visibility = "visible") {
+        select.disabled = false;
+    }
 
 
 }

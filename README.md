@@ -63,23 +63,55 @@ My project is a guess the number game. The user guesses between 1 and 100, then 
 
 ### Validator Testing
 
-- HTML
+### HTML
   - The W3C Markup Validation Service was used and passed with no errors.
 
 ![HTML Validator](assets/images/guess_number_html_checker.png)
 
-- CSS
+### CSS
   - The W3C Jigsaw CSS Validation Service was used and passed with no errors.
 
 ![CSS Validator](assets/images/guess_number_css_checker.png)
 
-- JavaScript
+### JavaScript
   - No errors were found when passing through the official [Jshint Validator](https://jshint.com/) 
     - The following metrics were returned:
     - There are 5 functions in this file.
     - Function with the largest signature take 1 arguments, while the median is 1.
     - Largest function has 38 statements in it, while the median is 10.
     - The most complex function has a cyclomatic complexity value of 12 while the median is 2.
+
+### Functionality
+---
+
+| **Feature** | **Action** | **Expected Outcome** | **Actual Outcome** |
+|-------------|------------|---------------------|-------------------|
+| Dropdown menu | Press dropdown arrow | List of difficulties from Easy to Hard appear | PASS |
+| Dropdown menu | Select Easy, Medium or Hard | When the game starts, it starts with the selected difficulty | PASS |
+| Dropdown menu | Start the game | Once the game starts the dropdown menu is disabled until the game restarts | PASS |
+| Guess Area | Put it in a number that isn't between 1 and 100 | Alert saying to choose a number between 1 and 100 | PASS |
+| Guess Button | Make a guess and press the button | It registers your guess | PASS |
+| Hourglass | Let the timer run down | Hourglass changes from full to half to empty depending on the time left | PASS |
+| Press Play text | Make a guess | The text changes to let the user know if their guess was too high or too low | PASS |
+| Press Play text | Let the timer run down | The text changes to time's up and gives the user the answer | PASS |
+| No. of Guesses text | Make multiple guesses | The text lets you know how many guesses you have made | PASS |
+| Guessed Numbers | Make multiple guesses | The text lets you know which numbers you have guessed | PASS |
+| New Game | Press the New Game button | The game starts over again if it has ended, or restarts if it was in the middle of a game | PASS |
+
+## Performance
+---
+
+### Desktop
+
+![Performance Test Desktop](assets/images/guess_number_desktop_performance.png)
+
+- [PageSpeed Insights](https://pagespeed.web.dev/) was used to test the performance of the website for Desktop
+
+### Mobile
+
+![Performance Test Mobile](assets/images/guess_number_mobile_performance.png)
+
+- [PageSpeed Insights](https://pagespeed.web.dev/) was used to test the performance of the website for Mobile.
 
 ### Compatibility with browsers
 
@@ -102,21 +134,13 @@ The project website was tested on these devices:
 The project website was tested on numerous screen-sizes:
 
 - From 280px to 5000px
-   
-## Performance
----
 
-### Desktop
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+| Start button |  |  
+| Guess button |  |
+|  |  |
 
-![Performance Test Desktop](assets/images/guess_number_desktop_performance.png)
-
-- [PageSpeed Insights](https://pagespeed.web.dev/) was used to test the performance of the website for Desktop
-
-### Mobile
-
-![Performance Test Mobile](assets/images/guess_number_mobile_performance.png)
-
-- [PageSpeed Insights](https://pagespeed.web.dev/) was used to test the performance of the website for Mobile.
 
 ## Deployment
 ---
@@ -163,6 +187,9 @@ The website development was created in the "main" branch. This branch was deploy
   - The idea of the game was taken from searching [Google](https://www.google.com/)
   - All the text was written by me
   - The icons on the whole page were taken from [Font Awesome](https://fontawesome.com/v5/search)
+  - The background shadowing was taken from [Neumorphism](https://neumorphism.io/#e0e0e0)
+  - The CSS linear gradient was taken from [CSS Gradient](https://cssgradient.io/gradient-backgrounds/)
+  - The Corben and Roboto fonts were taken from [Google Fonts](https://fonts.google.com/)
 
 ### Media
 
