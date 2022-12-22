@@ -2,7 +2,7 @@
 
 My project is a guess the number game. The user guesses between 1 and 100, then a message will appear to let them know if it was too high or too low. There is a timer with 60 seconds on the clock, but you can change the difficulty from Easy to Medium or Hard and the clock will run down faster depending on which one the user chooses.
 
-![Responsive Mockup](assets/images/guess_number_screens.png)
+![Responsive Mockup](assets/images/guess_number_responsive.png)
 
 [Live website](https://philiposull.github.io/Project-Two/){:target="_blank" rel="noopener"}
 
@@ -29,21 +29,21 @@ My project is a guess the number game. The user guesses between 1 and 100, then 
 
 - This section has a difficulty dropdown menu going from Easy to Medium to Hard, on Easy the timer is 60 seconds, then it gets quicker and quicker going from Medium to Hard, giving the user a more difficult time to guess the right number.
 
-![Difficulty and Play Button](assets/images/guess_number_left_area.png)
+![Difficulty and Play Button](assets/images/guess_number_dropdown_play.png)
 
 
 ### Guess Area
 
 - In this section the user plays the game, they make their guesses and click the guess button or the Enter key.
 
-![Guess Area](assets/images/guess_number_center_area.png)
+![Guess Area](assets/images/guess_number_guess_area.png)
 
 
 ### Timer and hourglass
 
 - The timer starts at 60 seconds when played on Easy, then the 60 seconds speed up depending on whether the game is played on Medium or Hard. This section also has an hourglass and the hourglass is made up of 3 icons overall, the first hourglass is full at 60 seconds, at 30 seconds it then changes to a half hourglass and at 0 it changes to an empty hourlgass.
 
-![Timer and hourglass](assets/images/guess_number_right_area.png)
+![Timer and hourglass](assets/images/guess_number_timer.png)
 
 
 ### High/Low and Guesses
@@ -61,7 +61,7 @@ My project is a guess the number game. The user guesses between 1 and 100, then 
 
 ### Features left to implement:
 - I would add Keyframes Animation
-  - e.g Game Area difficulty dropdown menu & play button to slide in from the left and the timer to slide in from the right.
+  - I would have the Game Area dropdown menu & play button to slide in from the left and the timer to slide in from the right.
 - I would add a score board between the user and the computer for multiple rounds of play.
 
 ## Wireframes
@@ -70,6 +70,24 @@ My project is a guess the number game. The user guesses between 1 and 100, then 
 - This was built using [Balsamiq](https://balsamiq.com/wireframes/)
 
 ![Wireframes](assets/images/guess_number_wireframes.png)
+
+## Technologies
+---
+### Languages
+
+1. HTML
+2. CSS
+3. JavaScript
+
+### Frameworks & Tools
+
+- Git
+- Github
+- Gitpod
+- Google Fonts
+- W3schools
+- StackOverflow
+- Remove.bg
 
 ## Testing
 ---
@@ -117,13 +135,13 @@ My project is a guess the number game. The user guesses between 1 and 100, then 
 
 ### Desktop
 
-![Performance Test Desktop](assets/images/guess_number_desktop_performance.png)
+![Performance Test Desktop](assets/images/guess_number_desktop.png)
 
 - [PageSpeed Insights](https://pagespeed.web.dev/) was used to test the performance of the website for Desktop
 
 ### Mobile
 
-![Performance Test Mobile](assets/images/guess_number_mobile_performance.png)
+![Performance Test Mobile](assets/images/guess_number_mobile.png)
 
 - [PageSpeed Insights](https://pagespeed.web.dev/) was used to test the performance of the website for Mobile.
 
@@ -191,8 +209,8 @@ The website development was created in the "main" branch. This branch was deploy
 
 ### Content
 
-  - The idea of the game was taken from searching [Google](https://www.google.com/)
   - All the text was written by me
+  - The idea of the game was taken from searching [Google](https://www.google.com/)
   - The icons on the whole page were taken from [Font Awesome](https://fontawesome.com/v5/search)
   - The background shadowing was taken from [Neumorphism](https://neumorphism.io/#e0e0e0)
   - The CSS linear gradient was taken from [CSS Gradient](https://cssgradient.io/gradient-backgrounds/)

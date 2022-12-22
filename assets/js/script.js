@@ -61,7 +61,7 @@ function evaluateGuess(e) {
 
         numGuesses.textContent = (parseInt(numGuesses.innerText) + 1);
         if (parseInt(numGuesses.innerText) == 1) {
-            numGuessed.textContent = "Guessed Your guessed numbers are: " + userGuessVal;
+            numGuessed.textContent = "Your guessed numbers are: " + userGuessVal;
         } else {
             let sentence = numGuessed.innerText;
             numGuessed.textContent = sentence.slice(0, 21) + sentence.slice(21) + ',' + userGuessVal;
@@ -71,7 +71,7 @@ function evaluateGuess(e) {
 
         numGuesses.innerText = (parseInt(numGuesses.innerText) + 1);
         if (parseInt(numGuesses.innerText) == 1) {
-            numGuessed.textContent = "Guessed Your guessed numbers are: " + userGuessVal;
+            numGuessed.textContent = "Your guessed numbers are: " + userGuessVal;
         } else {
             let sentence = numGuessed.innerText;
             numGuessed.textContent = sentence.slice(0, 21) + sentence.slice(21) + ',' + userGuessVal;
@@ -81,7 +81,7 @@ function evaluateGuess(e) {
         numGuesses.innerText = (parseInt(numGuesses.innerText) + 1);
         if (parseInt(numGuesses.innerText) == 1) {
             highLowMsg.textContent = "CONGRATULATIONS! YOU MUST BE A PSYCHIC!";
-            numGuessed.textContent = "Guessed Your guessed numbers are: " + userGuessVal;
+            numGuessed.textContent = "Your guessed numbers are: " + userGuessVal;
             clearInterval(gameTimerId);
             btn.removeEventListener("click", evaluateGuess);
             userGuess.removeEventListener("keydown", evaluateGuessEnter);
