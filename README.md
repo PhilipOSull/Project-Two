@@ -4,62 +4,61 @@ My project is a guess the number game. The user guesses between 1 and 100, then 
 
 ![Responsive Mockup](assets/images/guess_number_responsive.png)
 
-[Live website](https://philiposull.github.io/Project-Two/){:target="_blank" rel="noopener"}
+[Live website](https://philiposull.github.io/Project-Two/)
 
 ## Features
 
-### Existing Features:
----
+### Existing Features
 
-### The heading and logo
+#### The heading and logo
 
 - At the very top of the page is the main heading and logo, big and easy for the user to see. Straight away when the user enters the website they will know what type of game it is from reading it.
 
 ![Heading&logo](assets/images/guess_number_heading.png)
 
 
-### Question area
+#### Question area
 
 - This section lets the user know the number is between 1 and 100. If they try guess any higher or lower than that they will be met with an alert.
 
 ![Question](assets/images/guess_number_question.png)
 
 
-### Difficulty and Play Button
+#### Difficulty and Play Button
 
 - This section has a difficulty dropdown menu going from Easy to Medium to Hard, on Easy the timer is 60 seconds, then it gets quicker and quicker going from Medium to Hard, giving the user a more difficult time to guess the right number.
 
 ![Difficulty and Play Button](assets/images/guess_number_dropdown_play.png)
 
 
-### Guess Area
+#### Guess Area
 
 - In this section the user plays the game, they make their guesses and click the guess button or the Enter key.
 
 ![Guess Area](assets/images/guess_number_guess_area.png)
 
 
-### Timer and hourglass
+#### Timer and hourglass
 
 - The timer starts at 60 seconds when played on Easy, then the 60 seconds speed up depending on whether the game is played on Medium or Hard. This section also has an hourglass and the hourglass is made up of 3 icons overall, the first hourglass is full at 60 seconds, at 30 seconds it then changes to a half hourglass and at 0 it changes to an empty hourlgass.
 
 ![Timer and hourglass](assets/images/guess_number_timer.png)
 
 
-### High/Low and Guesses
+#### High/Low and Guesses
 
 - In this section on the first line of text it lets the user know to press the play button to start the game, if they press the guess button first nothing will happen. The first line of text also changes when the user starts playing, it lets them know if their guess was too high or too low. If they win it congratulates them, if they lose it tells them times up and lets them know what the answer was. The second line of text is the numbers of guesses the user has used up trying to guess. In the third line of text it lets the user know the numbers they have already guessed.
 
 ![High/Low and Guesses](assets/images/guess_number_bottom_text.png)
 
 
-### New Game
+#### New Game
 
 - This section gives the user the opportunity to start a new game if the previous one has ended in a win or loss, or if they are in the middle of a game and might like to restart.
 
 ![New Game](assets/images/guess_number_new_game.png)
 
-### Features left to implement:
+### Features left to implement
 ---
 - I would add Keyframes Animation
   - I would have the Game Area dropdown menu & play button to slide in from the left and the timer to slide in from the right.
@@ -211,7 +210,6 @@ The website development was created in the "main" branch. This branch was deploy
 7. Suggest the changes that you made, to be added to Project repo using a pull request.
 
 ## Credits
----
 
 ### Content
 
