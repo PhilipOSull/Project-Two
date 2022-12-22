@@ -139,13 +139,13 @@ My project is a guess the number game. The user guesses between 1 and 100, then 
 
 ### Desktop
 
-![Performance Test Desktop](assets/images/guess_number_desktop.png)
+![Performance Test Desktop](assets/images/guess_number_desktop.performance.png)
 
 - [PageSpeed Insights](https://pagespeed.web.dev/) was used to test the performance of the website for Desktop
 
 ### Mobile
 
-![Performance Test Mobile](assets/images/guess_number_mobile.png)
+![Performance Test Mobile](assets/images/guess_number_mobile_performance.png)
 
 - [PageSpeed Insights](https://pagespeed.web.dev/) was used to test the performance of the website for Mobile.
 
