@@ -7,9 +7,9 @@ My project is a guess the number game. The user guesses between 1 and 100, then 
 [Live website](https://philiposull.github.io/Project-Two/){:target="_blank" rel="noopener"}
 
 ## Features
----
 
 ### Existing Features:
+---
 
 ### The heading and logo
 
@@ -60,19 +60,22 @@ My project is a guess the number game. The user guesses between 1 and 100, then 
 ![New Game](assets/images/guess_number_new_game.png)
 
 ### Features left to implement:
+---
 - I would add Keyframes Animation
   - I would have the Game Area dropdown menu & play button to slide in from the left and the timer to slide in from the right.
 - I would add a score board between the user and the computer for multiple rounds of play.
 
+### Going forward:
+- For my projects going forward I would commit more, sometimes I can spend hours trying to solve issues one after another without a commit. 
+
 ## Wireframes
----
 
 - This was built using [Balsamiq](https://balsamiq.com/wireframes/)
 
 ![Wireframes](assets/images/guess_number_wireframes.png)
 
 ## Technologies
----
+
 ### Languages
 
 1. HTML
@@ -86,13 +89,16 @@ My project is a guess the number game. The user guesses between 1 and 100, then 
 - Gitpod
 - Google Fonts
 - W3schools
-- StackOverflow
+- Stackoverflow
 - Remove.bg
+- CSS Gradient
+- Font Awesome
+- Neumorphism
 
 ## Testing
----
 
 ### Validator Testing
+---
 
 ### HTML
   - The W3C Markup Validation Service was used and passed with no errors.
@@ -131,7 +137,6 @@ My project is a guess the number game. The user guesses between 1 and 100, then 
 | New Game | Press the New Game button | The game starts over again if it has ended, or restarts if it was in the middle of a game | PASS |
 
 ## Performance
----
 
 ### Desktop
 
@@ -168,7 +173,6 @@ The project website was tested on numerous screen-sizes:
 - From 280px to 5000px
 
 ## Deployment
----
 
 The website development was created in the "main" branch. This branch was deployed using GitHub Pages.
 
@@ -184,7 +188,7 @@ The website development was created in the "main" branch. This branch was deploy
 
 ## Cloning
 
-- Clone this project following the steps:
+- Clone a project following the steps:
 
 1. Open GitHub.
 2. Click on the project to be cloned.
@@ -195,6 +199,8 @@ The website development was created in the "main" branch. This branch was deploy
 7. Press 'Enter' and the project is cloned.
 
 ## Forking
+
+- Fork a project following the steps:
 
 1. Open GitHub.
 2. Click on the project to be forked.
@@ -209,13 +215,23 @@ The website development was created in the "main" branch. This branch was deploy
 
 ### Content
 
-  - All the text was written by me
+  - All the text was written by me.
   - The idea of the game was taken from searching [Google](https://www.google.com/)
+  - I found Ania Kubów on [YouTube](https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw)
+    - I used the same timer she used in her Whac-a-mole game.
   - The icons on the whole page were taken from [Font Awesome](https://fontawesome.com/v5/search)
   - The background shadowing was taken from [Neumorphism](https://neumorphism.io/#e0e0e0)
   - The CSS linear gradient was taken from [CSS Gradient](https://cssgradient.io/gradient-backgrounds/)
   - The Corben and Roboto fonts were taken from [Google Fonts](https://fonts.google.com/)
 
-### Media
+## Acknowledgements
+
+I would like to take the opportunity to thank:
+
+- My mentor Brian Macharia
+
+- A passed student Feddie Dermesonoglou
+
+- To all the lovely people from Code Institute and on Slack 
 
 

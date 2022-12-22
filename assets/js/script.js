@@ -1,6 +1,7 @@
 /*jshint esversion: 6 */
 
 // MY GLOBAL VARIABLES //
+
 const btn = document.getElementById("btn-guess");
 const btnRestart = document.getElementById("btn-new-game");
 const btnStart = document.getElementById("btn-start");
@@ -12,13 +13,9 @@ const numGuessed = document.getElementById("num-guessed");
 const numGuesses = document.getElementById("num-guesses");
 const userGuess = document.getElementById("guess-area");
 
-
-
 let computerAnswer = Math.floor(Math.random() * 100) + 1;
 let gameTimerId;
 let timer = 60;
-
-
 
 // MY EVENT LISTENERS //
 
@@ -27,8 +24,7 @@ userGuess.addEventListener("keydown", evaluateGuessEnter);
 btnRestart.addEventListener("click", restart);
 btnStart.addEventListener("click", startGame);
 
-
-// FUNCTIONS //
+// MY FUNCTIONS //
 
 function evaluateGuessEnter(e) {
     if (e.key == "Enter") {
@@ -54,7 +50,7 @@ function evaluateGuess(e) {
         Swal.fire(
             "oops...",
             "Please enter a number between 1 and 100.",
-            'question'
+            "question"
           )
     } else if (userGuessVal < computerAnswer) {
         highLowMsg.textContent = "Your guess is too Low!";
