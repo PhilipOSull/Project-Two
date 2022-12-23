@@ -26,7 +26,7 @@ My project is a guess the number game. The user guesses between 1 and 100, then 
 
 #### Difficulty and Play Button
 
-- This section has a difficulty dropdown menu going from Easy to Medium to Hard, on Easy the timer is 60 seconds, then it gets quicker and quicker going from Medium to Hard, giving the user a more difficult time to guess the right number.
+- This section has a difficulty dropdown menu and a Play button. The dropdown menu goes from from Easy to Medium to Hard, on Easy the timer is 60 seconds, then it gets quicker and quicker going from Medium to Hard, giving the user a more difficult time to guess the right number. The Play button starts the game and the timer, once the Play button has been pressed the dropdown menu is disabled until the timer ends or the New Game button has been pressed.
 
 ![Difficulty and Play Button](assets/images/guess_number_dropdown_play.png)
 
